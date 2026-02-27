@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's lesson of the year</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+</head>
+
+<body>
+    <main>
+
+        <header><span>Высотная поясность гор Европейской части России</span>
+            <div class="buttons">
+                <div class="button" page-id="1"><span>Теория</span></div>
+                <div class="button" page-id="2"><span>Видео</span></div>
+                <div class="button" page-id="3"><span>Рельеф</span></div>
+                <div class="button" page-id="4"><span>Природные Зоны</span></div>
+                <div class="button" page-id="5"><span>5 Вершин</span></div>
+                <div class="button" page-id="6"><span>Тест</span></div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="page" page-id="1" id="theory">
+                <div class="v-cont">
+                    <h1>Высотная поясность в горах России</h1>
+
+                    <!-- Секция с вопросами -->
+                    <div class="questions-section">
+                        <div class="questions-title">Ответы на эти важные вопросы вы получите, ознакомившись с этой
+                            статьёй
+                            до конца:</div>
+                        <ul class="questions-list">
+                            <li>Что такое «высотная поясность»?</li>
+                            <li>В чем разница между высотной и широтной поясностью (зональностью)?</li>
+                            <li>Что и как меняется с высотой в горах?</li>
+                            <li>От чего же в первую очередь зависит формирование природных зон в горах?</li>
+                            <li>Есть ли схожесть широтной зональности и высотной поясности?</li>
+                            <li>В чем особенность условий проживания и хозяйственной деятельности человека в горах?</li>
+                            <li>Чем еще для человека стали горы?</li>
+                        </ul>
+                    </div>
+
+                    <!-- Первый блок с изображением -->
+                    <div class="image-section">
+                        <div class="image-container">
+                            <img src="images/th5.jpg" alt="">
+                        </div>
+                        <div class="image-container">
+                            <img src="images/th6.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Основной контент -->
+                    <div class="content-block">
+                        <div class="text-content">
+                            <p>В горах с высотой меняется <strong>температура и количество осадков</strong>, поэтому
+                                быстро
+                                меняются и ландшафты.</p>
+                            <p>Смена природных зон в горах называется <strong>высотной поясностью</strong>.</p>
+                            <p>В отличие от равнин, где природные зоны могут растянуться на тысячи километров и чаще
+                                всего
+                                располагаются широтно (широтная зональность), природные зоны в горах (высотные пояса)
+                                располагаются достаточно близко друг к другу на разной высоте над уровнем моря.</p>
+                            <p>На равнине влажные участки чередуются с сухими. В горах же с высотой влажность растет, но
+                                понижается температура. Поэтому, чем выше в горы, тем растительности меньше.</p>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/th4.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Второй блок -->
+                    <div class="content-block" style="direction: rtl;">
+                        <div class="text-content" style="direction: ltr;">
+                            <p>Высотные пояса аналогичны уже известным тебе природным зонам на равнине, но нельзя
+                                сказать,
+                                что они их полностью повторяют.</p>
+                            <p>Кроме того, <strong>высотные пояса разных хребтов индивидуальны</strong>. И даже могут
+                                различаться на отдельных склонах одного горного хребта, потому что склоны по-разному
+                                освещаются и прогреваются солнцем, по-разному идет циркуляция воздуха (наветренные и
+                                подветренные склоны), по-разному увлажняются (наветренные склоны больше, подветренные —
+                                меньше).</p>
+                            <p>Начинается высотная (вертикальная) зональность с той природной зоны, в которой
+                                располагается
+                                горная система. Дальше меняются примерно так же, как на равнине при движении с юга на
+                                север.
+                            </p>
+                        </div>
+                        <div class="image-container" style="direction: ltr;">
+                            <img src="images/th3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Карточки с особенностями -->
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <p>🌡️ <strong>Температура:</strong> С высотой понижается в среднем на 0.6°C на каждые 100
+                                метров</p>
+                        </div>
+                        <div class="feature-card">
+                            <p>💧 <strong>Влажность:</strong> На наветренных склонах выпадает больше осадков</p>
+                        </div>
+                        <div class="feature-card">
+                            <p>🌿 <strong>Растительность:</strong> От подножия до вершины меняются природные зоны</p>
+                        </div>
+                    </div>
+
+                    <!-- Блок с фактами о человеке -->
+                    <div class="facts-block">
+                        <p style="color: #003366; line-height: 1.8; font-size: 1.1em;">
+                            Люди исторически выбирали горы местом своего проживания. Однако условия жизни и ведения
+                            хозяйственной деятельности не всегда благоприятны, а иногда даже опасны. С высотой быстро
+                            меняются характеристики климата, почвы и растительности.
+                        </p>
+                    </div>
+
+                    <!-- Нижний блок (хозяйственная деятельность) -->
+                    <div class="bottom-content">
+                        <div class="bottom-card">
+                            <h3>🏞️ Хозяйственная деятельность</h3>
+                            <p><span class="highlight">Растениеводство</span> ограничено (зерновые культуры,
+                                виноградарство), так как нет достаточных посевных площадей (возможно в предгорьях,
+                                межгорных
+                                котловинах, долинах) и чем выше в горы, тем почвы беднее.</p>
+                            <p><span class="highlight">Животноводство</span> развито (овцеводство, крупный рогатый скот,
+                                разведение яков), активно развивается пчеловодство.</p>
+                        </div>
+                        <div class="bottom-card">
+                            <h3>⛷️ Рекреация и туризм</h3>
+                            <p><span class="highlight">Рекреационное хозяйство</span> сделало горы территорией смысла
+                                многих
+                                активных людей.</p>
+                            <p>Красота гор, которая манит к себе в буквальном смысле этого слова, горный воздух,
+                                возможность
+                                покататься на лыжах и сноубордах выше снеговой линии (линия, выше которой снег лежит
+                                круглый
+                                год) и увеличение обустроенных курортов и зон отдыха привлекает в горы все больше
+                                туристов.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Нижнее изображение -->
+                    <div class="image-section" style="margin-top: 30px;">
+                        <div class="image-container">
+                            <img src="images/th2.jpg" alt="">
+                        </div>
+                        <div class="image-container">
+                            <img src="images/th1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page" page-id="2" id="video">
+
+            </div>
+            <div class="page" page-id="3" id="height-map">
+                <div id="heights"><img src="images/heights.jpg" alt=""></div>
+                <div id="relief-map"><img src="images/relief_map.jpg" alt=""></div>
+            </div>
+            <div class="page" page-id="4" id="env-zone">
+                <div id="env-zone-map"><img src="images/env_zone_map.jpg" alt=""></div>
+            </div>
+            <div class="page" page-id="5" id="five-tops">
+                <iframe src='https://my.mail.ru/video/embed/8091807536300164556' width='626' height='367'
+                    frameborder='0' scrolling='no' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="page" page-id="6" id="test">
+                <div class="quest-container">
+                    <span class="counter">0/10</span>
+                    <span class="question-text">asdflkasdflkmaspdk klmga;kfmg</span>
+                    <div class="option" aid="0"><span></span></div>
+                    <div class="option" aid="1"><span></span></div>
+                    <div class="option" aid="2"><span></span></div>
+                    <div class="option" aid="3"><span></span></div>
+                    <div class="next active"><span>Дальше</span></div>
+                </div>
+            </div>
+            <div class="page" page-id="7" id="tb">
+                <div class="v-cont">
+                    <h1>⛑️ Техника безопасности в горах</h1>
+
+                    <!-- Вопросы для самопроверки (как в теории) -->
+                    <div class="questions-section">
+                        <div class="questions-title">Прежде чем отправиться в горы, ответь на вопросы:</div>
+                        <ul class="questions-list">
+                            <li>Что обязательно должно быть в аптечке?</li>
+                            <li>Как одеваться в горы?</li>
+                            <li>Что делать при резкой смене погоды?</li>
+                            <li>Как избежать горной болезни?</li>
+                            <li>Какие правила поведения в группе?</li>
+                            <li>Что делать, если отстал от группы?</li>
+                        </ul>
+                    </div>
+
+                    <!-- Два контейнера под изображения (как в теории) -->
+                    <div class="image-section">
+                        <div class="image-container">
+                            <div class="image-box" style="--content: 'Снаряжение для гор'"></div>
+                            <div class="image-caption">Правильное снаряжение — залог безопасности</div>
+                        </div>
+                        <div class="image-container">
+                            <div class="image-box" style="--content: 'Опасности в горах'"></div>
+                            <div class="image-caption">Основные опасности горной местности</div>
+                        </div>
+                    </div>
+
+                    <!-- Основные правила -->
+                    <div class="content-block">
+                        <div class="text-content">
+                            <p><strong>Первое и главное правило:</strong> никогда не ходи в горы один. Даже опытные
+                                альпинисты всегда имеют напарника.</p>
+                            <p>Перед выходом обязательно <strong>сообщи маршрут</strong> и время возвращения в МЧС или
+                                близким.</p>
+                            <p>С собой всегда должны быть: <strong>аптечка, фонарик, запас еды и воды, тёплая одежда,
+                                    заряженный телефон, powerbank</strong>.</p>
+                        </div>
+                        <div class="side-image">
+                            <div class="image-box"></div>
+                            <div class="image-caption">Снаряжение</div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Сетка правил безопасности -->
+                    <div class="rules-grid">
+                        <div class="rule-card">
+                            <span class="rule-number">Правило 1</span>
+                            <p>Оценивай свои силы реально. Не выбирай сложные маршруты без подготовки.</p>
+                        </div>
+                        <div class="rule-card">
+                            <span class="rule-number">Правило 2</span>
+                            <p>Следи за погодой. При ухудшении — немедленно спускайся вниз.</p>
+                        </div>
+                        <div class="rule-card">
+                            <span class="rule-number">Правило 3</span>
+                            <p>Держи группу в поле зрения. Не расходитесь далеко друг от друга.</p>
+                        </div>
+                        <div class="rule-card">
+                            <span class="rule-number">Правило 4</span>
+                            <p>Изучи маршрут заранее. Имей карту и компас.</p>
+                        </div>
+                    </div>
+
+                    <!-- Блок с предупреждением -->
+                    <div class="warning-block">
+                        <p><strong>Важно!</strong> На высоте более 2500 метров возможно развитие горной болезни.
+                            Симптомы:
+                            головная боль, тошнота, головокружение. При их появлении необходимо прекратить подъём и
+                            спуститься ниже.</p>
+                    </div>
+
+                    <!-- Нумерованный список действий -->
+                    <h2>Что делать в экстренной ситуации:</h2>
+                    <ol class="numbered-list">
+                        <li>Остановиться и оценить обстановку</li>
+                        <li>Связаться с группой (если отстал)</li>
+                        <li>Позвонить в МЧС по номеру 112</li>
+                        <li>Оказать первую помощь при необходимости</li>
+                        <li>Оставаться на месте, не пытаться идти в темноте</li>
+                    </ol>
+
+                    <!-- Нижний блок -->
+                    <div class="bottom-content">
+                        <div class="bottom-card">
+                            <h3>🎒 Что взять с собой:</h3>
+                            <p><span class="highlight">Аптечка</span> (бинты, пластырь, обезболивающее)</p>
+                            <p><span class="highlight">Навигация</span> (карта, компас, GPS)</p>
+                            <p><span class="highlight">Связь</span> (телефон, powerbank, рация)</p>
+                            <p><span class="highlight">Одежда</span> (термобельё, непромокаемая куртка)</p>
+                            <p><span class="highlight">Питание</span> (вода, еда, шоколад для энергии)</p>
+                        </div>
+                        <div class="bottom-card">
+                            <h3>⚠️ Чего НЕ делать:</h3>
+                            <p>❌ Не ходить в одиночку</p>
+                            <p>❌ Не игнорировать погоду</p>
+                            <p>❌ Не срезать путь по опасным участкам</p>
+                            <p>❌ Не переоценивать свои силы</p>
+                            <p>❌ Не забывать сообщать маршрут</p>
+                        </div>
+                    </div>
+
+                    <!-- Дополнительное изображение -->
+                    <div class="image-section" style="margin-top: 30px;">
+                        <div class="image-container">
+                            <div class="image-box"></div>
+                            <div class="image-caption">Группа в горах</div>
+                        </div>
+                        <div class="image-container">
+                            <div class="image-box"></div>
+                            <div class="image-caption">Экстренная связь</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" page-id="11" id="practic">
+                <div class="v-cont">
+                    <div class="practical-work">
+                        <h2>📋 Практическая работа</h2>
+                        <p class="work-subtitle">Тема: Объяснение различий структуры высотной поясности в горных
+                            системах</p>
+
+                        <!-- Задание 1 -->
+                        <div class="task-card">
+                            <div class="task-number">Задание №1</div>
+                            <p class="task-text">Заполни пропуски в тексте</p>
+
+                            <div class="fill-text">
+                                <p>Широтная зональность — это смена <input type="text" class="blank-field"> на равнинах.
+                                    Происходит с <input type="text" class="blank-field"> на <input type="text"
+                                        class="blank-field">
+                                    из-за зональной смены <input type="text" class="blank-field">.</p>
+                                <p>Высотная поясность — это смена <input type="text" class="blank-field"> в горных
+                                    районах.
+                                    Происходит от <input type="text" class="blank-field"> к <input type="text"
+                                        class="blank-field">
+                                    из-за смены <input type="text" class="blank-field">.</p>
+                            </div>
+
+                            <details class="answer-hint">
+                                <summary>Показать ответы</summary>
+                                <div class="answer-content">
+                                    <p><strong>Широтная зональность:</strong> природных зон, севера, юг, температур</p>
+                                    <p><strong>Высотная поясность:</strong> природных зон, подножия, вершине, температур
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Задание 2 -->
+                        <div class="task-card">
+                            <div class="task-number">Задание №2</div>
+                            <p class="task-text">Подпиши природную зону (природный ландшафт) изображенную на картинке
+                            </p>
+
+                            <div class="image-section" style="grid-template-columns: 1fr 1fr; margin-top: 15px;">
+                                <div class="image-container">
+                                    <div class="image-box" style="height: 200px;"></div>
+                                    <div class="image-caption">
+                                        <input type="text" class="blank-field">
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="image-box" style="height: 200px;"></div>
+                                    <div class="image-caption">
+                                        <input type="text" class="blank-field">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <details class="answer-hint">
+                                <summary>Показать ответы</summary>
+                                <div class="answer-content">
+                                    <p><strong>Слева:</strong> Смешанные широколиственные леса</p>
+                                    <p><strong>Справа:</strong> Нивальный пояс (пояс снегов и льда)</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Задание 3 -->
+                        <div class="task-card">
+                            <div class="task-number">Задание №3</div>
+                            <p class="task-text">Выбери верные варианты</p>
+
+                            <div class="underline-task">
+                                <p>С высотой
+                                    <label class="checkbox-option">
+                                        <input type="radio" name="0"> понижается
+                                    </label> /
+                                    <label class="checkbox-option">
+                                        <input type="radio" name="0"> повышается
+                                    </label> атмосферное давление,
+                                    <label class="checkbox-option">
+                                        <input type="radio" name="1"> уменьшается
+                                    </label> /
+                                    <label class="checkbox-option">
+                                        <input type="radio" name="1"> увеличивается
+                                    </label> температура, изменяется режим увлажнения.
+                                </p>
+                                <p>При подъеме примерно на 70 метров в горы природа сменяется так же, как если бы мы
+                                    двигались с юга на север на 110 километров!</p>
+                                <p>Связано это с
+                                    <label class="checkbox-option">
+                                        <input type="radio" name="2"> понижением
+                                    </label> /
+                                    <label class="checkbox-option">
+                                        <input type="radio" name="2"> повышением
+                                    </label> каждые 100 метров температуры на 0,6 градусов, а каждые 10 метров —
+                                    <label class="checkbox-option">
+                                        <input type="radio" name="3"> понижением
+                                    </label> /
+                                    <label class="checkbox-option">
+                                        <input type="radio" name="3"> повышением
+                                    </label> давления на 1 мм рт. ст.
+                                </p>
+                            </div>
+
+                            <details class="answer-hint">
+                                <summary>Показать ответы</summary>
+                                <div class="answer-content">
+                                    <p>Правильные варианты: <strong>понижается, уменьшается, понижением,
+                                            понижением</strong></p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Задание 4 -->
+                        <div class="task-card">
+                            <div class="task-number">Задание №4</div>
+                            <p class="task-text">Среди представленных горных систем отметь две, с наибольшим количеством
+                                высотных поясов</p>
+
+                            <div class="mountain-list">
+                                <label class="mountain-option">
+                                    <input type="checkbox"> Большой Кавказ
+                                </label>
+                                <label class="mountain-option">
+                                    <input type="checkbox"> Алтай
+                                </label>
+                                <label class="mountain-option">
+                                    <input type="checkbox"> Крымские горы
+                                </label>
+                                <label class="mountain-option">
+                                    <input type="checkbox"> Верхоянский хребет
+                                </label>
+                                <label class="mountain-option">
+                                    <input type="checkbox"> Хибины
+                                </label>
+                            </div>
+
+                            <details class="answer-hint">
+                                <summary>Показать ответы</summary>
+                                <div class="answer-content">
+                                    <p><strong>Большой Кавказ</strong> и <strong>Алтай</strong></p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Задание 5 -->
+                        <div class="task-card">
+                            <div class="task-number">Задание №5</div>
+                            <p class="task-text">Сравни высотную поясность Кавказских и Уральских гор</p>
+
+                            <div class="comparison-table">
+                                <table>
+                                    <tr>
+                                        <th>Горная система</th>
+                                        <th>Количество поясов</th>
+                                        <th>Особенности</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Кавказские горы</td>
+                                        <td><input type="text" class="blank-field"></td>
+                                        <td><input type="text" class="blank-field"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Уральские горы</td>
+                                        <td><input type="text" class="blank-field"></td>
+                                        <td><input type="text" class="blank-field"></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <p class="task-text" style="margin-top: 20px;">От каких факторов зависит количество и виды
+                                высотных поясов?</p>
+                            <div class="factors-list">
+                                <p>Факторы, определяющие количество высотных поясов: <input type="text"
+                                        class="blank-field"></span></p>
+                                <p class="factor-note">Море — серьезный регулятор влажности. Склоны, расположенные со
+                                    стороны моря и ближе к нему, как правило, обладают большим разнообразием высотных
+                                    поясов. При передвижении воздушных масс горы являются естественной преградой,
+                                    поэтому часты случаи, когда на западном и восточном склонах одних и тех же гор
+                                    количество осадков различается в разы, что естественно отражается на всех остальных
+                                    компонентах природы. Аналогичная ситуация с северными и южными склонами. Южные могут
+                                    получать в разы больше тепла в один и тот же период времени.</p>
+                            </div>
+
+                            <details class="answer-hint">
+                                <summary>Показать ответы</summary>
+                                <div class="answer-content">
+                                    <p><strong>Количество поясов:</strong> зависит от географической широты и высоты гор
+                                    </p>
+                                    <p><strong>Факторы:</strong> удаленность от моря и экспозиция склона</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Задание 6 -->
+                        <div class="task-card">
+                            <div class="task-number">Задание №6</div>
+                            <p class="task-text">Определи, какая температура воздуха будет на вершине горы (А), если у
+                                ее подножия (Б) температура составляет 12°С и известно, что температура воздуха
+                                понижается на 0,6°С на каждые 100 м высоты.</p>
+
+                            <div class="image-section"
+                                style="grid-template-columns: 1fr; max-width: 400px; margin: 20px auto;">
+                                <div class="image-container">
+                                    <div class="image-box" style="height: 250px;"></div>
+                                    <div class="image-caption">Гора (схема)</div>
+                                </div>
+                            </div>
+
+                            <div class="answer-field">
+                                <p><strong>Ответ:</strong> <input type="text" class="blank-field"> °С</p>
+                            </div>
+
+                            <details class="answer-hint">
+                                <summary>Показать ответы</summary>
+                                <div class="answer-content">
+                                    <p><strong>9°С</strong> (при условии высоты 500 м)</p>
+                                    <p class="note">* Для точного ответа нужна высота горы</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" page-id="12" id="homework">
+                <div class="homework-section">
+                    <h2>📚 Домашнее задание</h2>
+
+                    <div class="homework-level basic" page-id="11">
+                        <div class="level-icon">🔵</div>
+                        <div class="level-content">
+                            <div class="level-title">Базовый уровень</div>
+                            <p>Выполнить практическую работу на сайте.</p>
+                        </div>
+                    </div>
+
+                    <div class="homework-level advanced">
+                        <div class="level-icon">🔴</div>
+                        <div class="level-content">
+                            <div class="level-title">Повышенный уровень</div>
+                            <p>Выявить факторы, определяющие количество высотных поясов: удаленность от моря и
+                                экспозицию склона.</p>
+                        </div>
+                    </div>
+
+                    <div class="homework-level creative">
+                        <div class="level-icon">💡</div>
+                        <div class="level-content">
+                            <div class="level-title">Творческое задание</div>
+                            <p>Представьте, что вы турагент и разработайте туристический маршрут по одной из горных
+                                вершин Европейской части России.</p>
+                        </div>
+                    </div>
+
+                    <a href="https://t.me/ShulaevaTatyana" target="_blank" class="telegram-link">
+                        📬 Отправляй домашнее задание сюда: @ShulaevaTatyana
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="buttons bottom">
+            <div class="button bottom" page-id="7"><span>Teхника безопасности</span></div>
+            <div class="button bottom main" page-id="8"><span>Кавказ</span></div>
+            <div class="button bottom main" page-id="9"><span>Крым</span></div>
+            <div class="button bottom main" page-id="10"><span>Урал</span></div>
+            <div class="button bottom" page-id="11"><span>Практика</span></div>
+            <div class="button bottom" page-id="12"><span>Домашнее задание</span></div>
+        </div>
+        <footer></footer>
+    </main>
+    <script src="pages.js"></script>
+    <script src="test.js"></script>
+</body>
+
+</html>
