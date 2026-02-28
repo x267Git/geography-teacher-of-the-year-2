@@ -21,13 +21,14 @@
                 <div class="button" page-id="1"><span>Теория</span></div>
                 <div class="button" page-id="2"><span>Видео</span></div>
                 <div class="button" page-id="3"><span>Рельеф</span></div>
-                <div class="button" page-id="4"><span>Природные Зоны</span></div>
+                <div class="button" page-id="4" style="line-height: 220%;"><span>Природные Зоны</span>
+                </div>
                 <div class="button" page-id="5"><span>5 Вершин</span></div>
                 <div class="button" page-id="6"><span>Тест</span></div>
             </div>
         </header>
         <div class="content">
-            <div class="page" page-id="1" id="theory">
+            <div class="page active" page-id="1" id="theory">
                 <div class="v-cont">
                     <h1>Высотная поясность в горах России</h1>
 
@@ -161,7 +162,12 @@
                 </div>
             </div>
             <div class="page" page-id="2" id="video">
-
+                <div style="position: relative; padding-top: 56.25%; width: 80%"><iframe
+                        src="https://kinescope.io/embed/wjx1GYuo3vQ18SByFa3ysy"
+                        allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;"
+                        frameborder="0" allowfullscreen
+                        style="position: absolute; width: 100%; height: 60dvh; top: 0; left: 0; object-fit: contain;"></iframe>
+                </div>
             </div>
             <div class="page" page-id="3" id="height-map">
                 <div id="heights"><img src="images/heights.jpg" alt=""></div>
@@ -202,31 +208,18 @@
                         </ul>
                     </div>
 
-                    <!-- Два контейнера под изображения (как в теории) -->
-                    <div class="image-section">
-                        <div class="image-container">
-                            <div class="image-box" style="--content: 'Снаряжение для гор'"></div>
-                            <div class="image-caption">Правильное снаряжение — залог безопасности</div>
-                        </div>
-                        <div class="image-container">
-                            <div class="image-box" style="--content: 'Опасности в горах'"></div>
-                            <div class="image-caption">Основные опасности горной местности</div>
-                        </div>
-                    </div>
 
                     <!-- Основные правила -->
                     <div class="content-block">
-                        <div class="text-content">
+                        <div class="text-content" style="width: 100%;">
                             <p><strong>Первое и главное правило:</strong> никогда не ходи в горы один. Даже опытные
                                 альпинисты всегда имеют напарника.</p>
-                            <p>Перед выходом обязательно <strong>сообщи маршрут</strong> и время возвращения в МЧС или
+                            <p>Перед выходом обязательно <strong>сообщи маршрут</strong> и время возвращения в МЧС
+                                или
                                 близким.</p>
-                            <p>С собой всегда должны быть: <strong>аптечка, фонарик, запас еды и воды, тёплая одежда,
+                            <p>С собой всегда должны быть: <strong>аптечка, фонарик, запас еды и воды, тёплая
+                                    одежда,
                                     заряженный телефон, powerbank</strong>.</p>
-                        </div>
-                        <div class="side-image">
-                            <div class="image-box"></div>
-                            <div class="image-caption">Снаряжение</div>
                         </div>
                     </div>
 
@@ -289,18 +282,6 @@
                             <p>❌ Не забывать сообщать маршрут</p>
                         </div>
                     </div>
-
-                    <!-- Дополнительное изображение -->
-                    <div class="image-section" style="margin-top: 30px;">
-                        <div class="image-container">
-                            <div class="image-box"></div>
-                            <div class="image-caption">Группа в горах</div>
-                        </div>
-                        <div class="image-container">
-                            <div class="image-box"></div>
-                            <div class="image-caption">Экстренная связь</div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -317,7 +298,8 @@
                             <p class="task-text">Заполни пропуски в тексте</p>
 
                             <div class="fill-text">
-                                <p>Широтная зональность — это смена <input type="text" class="blank-field"> на равнинах.
+                                <p>Широтная зональность — это смена <input type="text" class="blank-field"> на
+                                    равнинах.
                                     Происходит с <input type="text" class="blank-field"> на <input type="text"
                                         class="blank-field">
                                     из-за зональной смены <input type="text" class="blank-field">.</p>
@@ -331,8 +313,10 @@
                             <details class="answer-hint">
                                 <summary>Показать ответы</summary>
                                 <div class="answer-content">
-                                    <p><strong>Широтная зональность:</strong> природных зон, севера, юг, температур</p>
-                                    <p><strong>Высотная поясность:</strong> природных зон, подножия, вершине, температур
+                                    <p><strong>Широтная зональность:</strong> природных зон, севера, юг, температур
+                                    </p>
+                                    <p><strong>Высотная поясность:</strong> природных зон, подножия, вершине,
+                                        температур
                                     </p>
                                 </div>
                             </details>
@@ -341,25 +325,26 @@
                         <!-- Задание 2 -->
                         <div class="task-card">
                             <div class="task-number">Задание №2</div>
-                            <p class="task-text">Подпиши природную зону (природный ландшафт) изображенную на картинке
+                            <p class="task-text">Подпиши природную зону (природный ландшафт) изображенную на
+                                картинке
                             </p>
 
                             <div class="image-section" style="grid-template-columns: 1fr 1fr; margin-top: 15px;">
-                                <div class="image-container">
-                                    <div class="image-box" style="height: 200px;"></div>
+                                <div class="image-container" style="height: 40dvh;">
+                                    <img src="images/p1.jpg" alt="">
                                     <div class="image-caption">
-                                        <input type="text" class="blank-field">
+                                        <input type="text" class="blank-field" style="margin-top: 3%;">
                                     </div>
                                 </div>
-                                <div class="image-container">
-                                    <div class="image-box" style="height: 200px;"></div>
+                                <div class="image-container" style="height: 40dvh;">
+                                    <img src="images/p2.jpeg" alt="">
                                     <div class="image-caption">
-                                        <input type="text" class="blank-field">
+                                        <input type="text" class="blank-field" style="margin-top: 3%;">
                                     </div>
                                 </div>
                             </div>
 
-                            <details class="answer-hint">
+                            <details class="answer-hint" style="margin-top: 3%;">
                                 <summary>Показать ответы</summary>
                                 <div class="answer-content">
                                     <p><strong>Слева:</strong> Смешанные широколиственные леса</p>
@@ -418,7 +403,8 @@
                         <!-- Задание 4 -->
                         <div class="task-card">
                             <div class="task-number">Задание №4</div>
-                            <p class="task-text">Среди представленных горных систем отметь две, с наибольшим количеством
+                            <p class="task-text">Среди представленных горных систем отметь две, с наибольшим
+                                количеством
                                 высотных поясов</p>
 
                             <div class="mountain-list">
@@ -472,24 +458,30 @@
                                 </table>
                             </div>
 
-                            <p class="task-text" style="margin-top: 20px;">От каких факторов зависит количество и виды
+                            <p class="task-text" style="margin-top: 20px;">От каких факторов зависит количество и
+                                виды
                                 высотных поясов?</p>
                             <div class="factors-list">
                                 <p>Факторы, определяющие количество высотных поясов: <input type="text"
                                         class="blank-field"></span></p>
-                                <p class="factor-note">Море — серьезный регулятор влажности. Склоны, расположенные со
-                                    стороны моря и ближе к нему, как правило, обладают большим разнообразием высотных
+                                <p class="factor-note">Море — серьезный регулятор влажности. Склоны, расположенные
+                                    со
+                                    стороны моря и ближе к нему, как правило, обладают большим разнообразием
+                                    высотных
                                     поясов. При передвижении воздушных масс горы являются естественной преградой,
                                     поэтому часты случаи, когда на западном и восточном склонах одних и тех же гор
-                                    количество осадков различается в разы, что естественно отражается на всех остальных
-                                    компонентах природы. Аналогичная ситуация с северными и южными склонами. Южные могут
+                                    количество осадков различается в разы, что естественно отражается на всех
+                                    остальных
+                                    компонентах природы. Аналогичная ситуация с северными и южными склонами. Южные
+                                    могут
                                     получать в разы больше тепла в один и тот же период времени.</p>
                             </div>
 
                             <details class="answer-hint">
                                 <summary>Показать ответы</summary>
                                 <div class="answer-content">
-                                    <p><strong>Количество поясов:</strong> зависит от географической широты и высоты гор
+                                    <p><strong>Количество поясов:</strong> зависит от географической широты и высоты
+                                        гор
                                     </p>
                                     <p><strong>Факторы:</strong> удаленность от моря и экспозиция склона</p>
                                 </div>
@@ -499,15 +491,15 @@
                         <!-- Задание 6 -->
                         <div class="task-card">
                             <div class="task-number">Задание №6</div>
-                            <p class="task-text">Определи, какая температура воздуха будет на вершине горы (А), если у
+                            <p class="task-text">Определи, какая температура воздуха будет на вершине горы (А), если
+                                у
                                 ее подножия (Б) температура составляет 12°С и известно, что температура воздуха
                                 понижается на 0,6°С на каждые 100 м высоты.</p>
 
                             <div class="image-section"
-                                style="grid-template-columns: 1fr; max-width: 400px; margin: 20px auto;">
+                                style="grid-template-columns: 1fr;  width: 40%; margin: 20px auto;">
                                 <div class="image-container">
-                                    <div class="image-box" style="height: 250px;"></div>
-                                    <div class="image-caption">Гора (схема)</div>
+                                    <img src="images/p4.svg" alt="" style="width: 100%; object-fit: contain;">
                                 </div>
                             </div>
 
@@ -527,41 +519,355 @@
                 </div>
             </div>
 
-            <div class="page" page-id="12" id="homework">
-                <div class="homework-section">
-                    <h2>📚 Домашнее задание</h2>
+            <div class="page" page-id="8" id="kavkaz">
+                <div class="v-cont">
+                    <div class="mountain-block">
+                        <h2 class="mountain-title">🏔️ Кавказские горы</h2>
 
-                    <div class="homework-level basic" page-id="11">
-                        <div class="level-icon">🔵</div>
-                        <div class="level-content">
-                            <div class="level-title">Базовый уровень</div>
-                            <p>Выполнить практическую работу на сайте.</p>
+                        <div class="content-block">
+                            <div class="text-content">
+                                <p><strong>Кавказские горы</strong> как самые южные и самые высокие на территории
+                                    России
+                                    обладают самой сложной структурой высотной поясности. Высочайшая точка Кавказа —
+                                    гора
+                                    Эльбрус, 5642 м (также самая высокая вершина России и Европы).</p>
+                                <p>Подножие северного склона Большого Кавказа занимают степи и лесостепи, подножие
+                                    южного
+                                    склона — субтропические леса.</p>
+                            </div>
+                            <div class="side-image">
+                                <div class="image-box">
+                                    <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/c0025507-7105-4a70-9a18-fdb71993408e/1024pxMountElbrusMay2008w400.jpg"
+                                        alt="Гора Эльбрус">
+                                </div>
+                                <div class="image-caption">Рис. 1. Гора Эльбрус</div>
+                            </div>
+                        </div>
+
+                        <div class="content-block reverse">
+                            <div class="text-content">
+                                <p>Центральная часть склонов находится под властью широколиственных лесов, которые
+                                    сменяются
+                                    хвойными лесами. Выше располагаются субальпийские и альпийские луга. Вершины
+                                    покрыты
+                                    снежными и ледниковыми шапками.</p>
+                                <p>Различия в климате и геологическом строении гор накладывают отпечаток и на
+                                    высотные
+                                    пояса. Особенно чувствуются различия между западной и восточной частью Большого
+                                    Кавказа.
+                                    На западе выпадает больше атмосферных осадков. А у восточного подножия
+                                    расположены
+                                    сухие
+                                    степи и полупустыни.</p>
+                            </div>
+                            <div class="side-image">
+                                <div class="image-box">
+                                    <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/7853e3b4-440c-4e90-892c-a33ecdd99e11/Svanetigeorgiaw400.jpg"
+                                        alt="Горные ландшафты Кавказа">
+                                </div>
+                                <div class="image-caption">Рис. 2. Горные ландшафты Кавказа</div>
+                            </div>
+                        </div>
+
+                        <div class="image-section" style="grid-template-columns: 1fr;">
+                            <div class="image-container">
+                                <div class="image-box">
+                                    <img src="images/kz1.jpeg" alt="Высотная поясность Кавказских гор">
+                                </div>
+                                <div class="image-caption">Рис. 3. Высотная поясность северного склона Кавказских
+                                    гор
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="homework-level advanced">
-                        <div class="level-icon">🔴</div>
-                        <div class="level-content">
-                            <div class="level-title">Повышенный уровень</div>
-                            <p>Выявить факторы, определяющие количество высотных поясов: удаленность от моря и
-                                экспозицию склона.</p>
-                        </div>
-                    </div>
-
-                    <div class="homework-level creative">
-                        <div class="level-icon">💡</div>
-                        <div class="level-content">
-                            <div class="level-title">Творческое задание</div>
-                            <p>Представьте, что вы турагент и разработайте туристический маршрут по одной из горных
-                                вершин Европейской части России.</p>
-                        </div>
-                    </div>
-
-                    <a href="https://t.me/ShulaevaTatyana" target="_blank" class="telegram-link">
-                        📬 Отправляй домашнее задание сюда: @ShulaevaTatyana
-                    </a>
                 </div>
             </div>
+            <div class="page" page-id="9" id="krim">
+                <div class="v-cont"><!-- Крымские горы -->
+                    <div class="mountain-block">
+                        <h2 class="mountain-title">🏔️ Крымские горы</h2>
+
+                        <div class="content-block">
+                            <div class="text-content">
+                                <p><strong>Высотная поясность Крымских гор</strong> (высотная зональность) —
+                                    закономерная смена природных комплексов в горах Крыма в зависимости от высоты
+                                    над
+                                    уровнем моря. Это проявляется в разных аспектах: в климате, в растительности и в
+                                    животном мире.</p>
+                                <p>Некоторые особенности высотной поясности Крымских гор:</p>
+                                <p><strong>Выделение разных поясов</strong> на северном и южном склонах гор.</p>
+                            </div>
+                            <div class="side-image">
+                                <div class="image-box">
+                                    <img src="images/kr3.jpg" alt="Схема высотной поясности крымских гор">
+                                </div>
+                                <div class="image-caption">Схема высотной поясности Крымских гор</div>
+                            </div>
+                        </div>
+
+                        <div class="features-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 30px;">
+                            <div class="feature-card">
+                                <h3 style="color: #003366; margin-bottom: 15px;">🏔️ Северный склон</h3>
+                                <ul style="list-style-type: none; padding-left: 0;">
+                                    <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Лесостепной пояс</strong> (до 350 м)
+                                    </li>
+                                    <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Дубовые леса</strong> (350–700 м)
+                                    </li>
+                                    <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Буковые и грабово-буковые леса</strong> (500–700–1300 м)
+                                    </li>
+                                    <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Яйлинские сухие степи</strong> (более 1300 м)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="feature-card">
+                                <h3 style="color: #003366; margin-bottom: 15px;">☀️ Южный склон</h3>
+                                <ul style="list-style-type: none; padding-left: 0;">
+                                    <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Приморские заросли и можжевелово-дубовые леса</strong> (до 300–400
+                                        м)
+                                    </li>
+                                    <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Леса из сосны крымской</strong> (400–900 м)
+                                    </li>
+                                    <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Грабово-буково-сосновые леса</strong> (от 900 м до бровки яйл)
+                                    </li>
+                                    <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Яйлинские луговые степи</strong> (вершинный пояс)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-card full-width" style="margin-bottom: 30px;">
+                            <p><strong>Неоднородность рельефа</strong> — схема высотных поясов нарушается из-за
+                                склонов
+                                различной крутизны и экспозиции.</p>
+                        </div>
+
+                        <h3
+                            style="color: #003366; margin: 30px 0 15px; border-left: 5px solid #4a90e2; padding-left: 15px;">
+                            🌡️ Климат</h3>
+
+                        <div class="content-block">
+                            <div class="text-content">
+                                <p>Склоны Крымских гор имеют различные климатические условия под влиянием
+                                    господствующих
+                                    ветров и высотной поясности.</p>
+
+                                <div style="margin-bottom: 20px;">
+                                    <p><strong>В нижней части южного склона Яйлы</strong> — климат
+                                        средиземноморского
+                                        типа с мягкой зимой (у побережья средняя температура воздуха 2–4 °С) и очень
+                                        тёплым летом (средняя температура июля 24 °С). Лето и осень солнечные,
+                                        годовое
+                                        количество осадков — 600 мм (максимум — зимой), к востоку понижается.</p>
+                                </div>
+
+                                <div>
+                                    <p><strong>На вершинной поверхности Яйлы</strong> — зима умеренная (от –4 до –5
+                                        °С),
+                                        лето прохладное (в июле средняя температура 15–21 °С). Годовое количество
+                                        осадков на западе — 1000–1200 мм, на востоке — 500–700 мм, сильные ветры.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image-container"><img src="images/kr1.png" alt=""></div>
+                            <div class="image-caption">Климатические зоны Крыма</div>
+                        </div>
+                    </div>
+
+                    <h3
+                        style="color: #003366; margin: 30px 0 15px; border-left: 5px solid #4a90e2; padding-left: 15px;">
+                        🌿 Растительность</h3>
+
+                    <div class="features-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 30px;">
+                        <div class="feature-card">
+                            <h4 style="color: #1e4a7a; margin-bottom: 10px;">Предгорье</h4>
+                            <p>Лесостепной пояс: луговые степи, заросли кустарников (грабинник, держи-дерево,
+                                боярышник, терн) и низкорослые дубовые леса.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <h4 style="color: #1e4a7a; margin-bottom: 10px;">350–400 м</h4>
+                            <p>Лесной пояс: растительные сообщества дуба пушистого и дуба скального. В дубняках
+                                много кизила, бересклета, грабинника, бирючины.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <h4 style="color: #1e4a7a; margin-bottom: 10px;">700–800 м</h4>
+                            <p>Дубовые леса сменяются буковыми и грабовыми. Лесной пояс простирается до обрывов
+                                горных массивов, на самих вершинах лесов практически нет.</p>
+                        </div>
+                    </div>
+
+                    <h3
+                        style="color: #003366; margin: 30px 0 15px; border-left: 5px solid #4a90e2; padding-left: 15px;">
+                        🦊 Животный мир</h3>
+
+                    <div class="content-block" style="margin-bottom: 30px;">
+                        <div class="text-content">
+                            <p>Фауна Крымских гор носит черты островной фауны, что выражается в присутствии
+                                эндемиков и в неполноте многих групп животных.</p>
+
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                    <strong>На Южном берегу</strong> — среди ящериц известен эндемичный крымский
+                                    геккон.
+                                </li>
+                                <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                    <strong>Богато представлена фауна беспозвоночных</strong> южного
+                                    средиземноморского типа: цикады, богомолы, сколопендра, крымский скорпион,
+                                    фаланга, москиты.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="side-image">
+                            <div class="image-box"
+                                style="height: 200px; background: linear-gradient(145deg, #b8d4f0, #d9e8fa); display: flex; align-items: center; justify-content: center;">
+                                <img src="images/kr2.jpg" alt="">
+                            </div>
+                            <div class="image-caption">Крымский геккон (эндемик)</div>
+                        </div>
+                    </div>
+
+                    <h3
+                        style="color: #003366; margin: 30px 0 15px; border-left: 5px solid #4a90e2; padding-left: 15px;">
+                        🏭 Хозяйственная деятельность</h3>
+
+                    <div class="warning-block" style="margin: 20px 0;">
+                        <p>В предгорье Крымских гор активная хозяйственная деятельность, в особенности устройство
+                            крупных карьеров по добыче строительного камня, ведёт к уничтожению растительности и
+                            нарушениям естественных ландшафтов.</p>
+                        <p>Ландшафты предгорных степей сильно преобразованы за счёт больших площадей пашни, здесь
+                            расположены многочисленные сельскохозяйственные угодья на месте
+                            разнотравно-типчаково-ковыльных степей и пушисто-дубовых лесов предгорья.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="page" page-id="10" id="ural">
+            <div class="v-cont">
+                <div class="mountain-block">
+                    <h2 class="mountain-title">⛰️ Уральские горы</h2>
+
+                    <div class="content-block">
+                        <div class="text-content">
+                            <p><strong>Уральский горный хребет</strong> считается условной линией, по которой
+                                проходит
+                                граница между Европейской и Азиатской частью нашей страны. Это невысокие горы (самая
+                                высокая вершина — г. Народная, 1895 м). Протяжённость гор по меридиану — более 2000
+                                км,
+                                ширина варьируется от 40 км до 150 км.</p>
+                            <p>Уральские горы лежат практически во всех природных зонах Российской Федерации,
+                                поэтому их
+                                ландшафты в разных широтах различаются.</p>
+                        </div>
+                        <div class="side-image">
+                            <div class="image-box">
+                                <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/e1b59c9a-1c85-4cba-8049-15ca46c65822/LandscapeviewinCircumpolarUralsw400.jpg"
+                                    alt="Ландшафт Северного Урала">
+                            </div>
+                            <div class="image-caption">Рис. 1. Ландшафт Северного Урала</div>
+                        </div>
+                    </div>
+
+                    <div class="content-block reverse">
+                        <div class="text-content">
+                            <p>Несмотря на большую высоту в северной части, высотная поясность Урала здесь не
+                                обладает
+                                большим разнообразием. У подножия растут мхи и кустарнички, выше встречаются
+                                лишайники,
+                                далее склоны лишены растительности, у самых вершин лежат небольшие ледники. Этот
+                                пояс
+                                Урала носит название <strong>«гольцовый»</strong> (голый, без растительности).</p>
+                            <p>Южнее, в пределах Среднего Урала, склоны покрыты темнохвойными, в основном еловыми,
+                                лесами. Выше расположена тундра. Здесь горы невысокие.</p>
+                        </div>
+                        <div class="side-image">
+                            <div class="image-box">
+                                <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/27bcf9b8-d398-4c7e-9dc6-7e6d9d2c1407/ural1625764960720w400.jpg"
+                                    alt="Река Чусовая">
+                            </div>
+                            <div class="image-caption">Рис. 2. Река Чусовая</div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card full-width">
+                        <p><strong>Наибольшим разнообразием обладает Южный Урал.</strong> Лесостепи (березняки и
+                            степные
+                            луга) сменяются смешанными лесами, затем хвойными лесами, ещё выше расположены горная
+                            тундра
+                            и скалистые ландшафты.</p>
+                        <p>Большая часть склонов Уральских гор покрыта лесами, вершины заняты горной тундрой и
+                            каменистыми россыпями. На севере Уральских гор преобладает оледенение.</p>
+                    </div>
+
+                    <div class="image-section" style="grid-template-columns: 1fr;">
+                        <div class="image-container">
+                            <div class="image-box">
+                                <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/abf59f36-e2d0-4e06-8c40-71bda3f8a2f2/%D0%A3%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5%D0%B3%D0%BE%D1%80%D1%8Bw658.png"
+                                    alt="Высотная поясность Уральских гор">
+                            </div>
+                            <div class="image-caption">Рис. 3. Высотная поясность Уральских гор</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page" page-id="12" id="homework">
+            <div class="homework-section">
+                <h2>📚 Домашнее задание</h2>
+
+                <div class="homework-level basic" page-id="11">
+                    <div class="level-icon">🔵</div>
+                    <div class="level-content">
+                        <div class="level-title">Базовый уровень</div>
+                        <p>Выполнить практическую работу на сайте.</p>
+                    </div>
+                </div>
+
+                <div class="homework-level advanced">
+                    <div class="level-icon">🔴</div>
+                    <div class="level-content">
+                        <div class="level-title">Повышенный уровень</div>
+                        <p>Выявить факторы, определяющие количество высотных поясов: удаленность от моря и
+                            экспозицию склона.</p>
+                    </div>
+                </div>
+
+                <div class="homework-level creative">
+                    <div class="level-icon">💡</div>
+                    <div class="level-content">
+                        <div class="level-title">Творческое задание</div>
+                        <p>Представьте, что вы турагент и разработайте туристический маршрут по одной из горных
+                            вершин Европейской части России.</p>
+                    </div>
+                </div>
+
+                <a href="https://t.me/ShulaevaTatyana" target="_blank" class="telegram-link">
+                    📬 Отправляй домашнее задание сюда: @ShulaevaTatyana
+                </a>
+            </div>
+        </div>
 
         </div>
         <div class="buttons bottom">
@@ -572,7 +878,13 @@
             <div class="button bottom" page-id="11"><span>Практика</span></div>
             <div class="button bottom" page-id="12"><span>Домашнее задание</span></div>
         </div>
-        <footer></footer>
+        <footer>
+            <div class="footer-content">
+                <span class="footer-item">📞 +8 (927) 411-51-72</span>
+                <span class="footer-item">✉️ tuns88ta@mail.ru</span>
+                <a href="https://t.me/ShulaevaTatyana" target="_blank" class="footer-link">📬 @ShulaevaTatyana</a>
+            </div>
+        </footer>
     </main>
     <script src="pages.js"></script>
     <script src="test.js"></script>
