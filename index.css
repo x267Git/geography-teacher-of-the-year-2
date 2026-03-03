@@ -79,7 +79,8 @@ img {
 
 li,
 span,
-p {
+p,
+th {
     text-overflow: clip;
     text-align: center;
     align-self: center;
@@ -358,7 +359,6 @@ h2 {
     margin: var(--space-lg) 0 var(--space-sm);
     font-size: var(--text-2xl);
     padding-left: var(--space-xs);
-    border-left: 5px solid var(--blue-primary);
 }
 
 h3 {
@@ -408,10 +408,16 @@ h3 {
     font-weight: bold;
 }
 
-/* Изображения */
 .image-section {
     display: flex;
+    gap: 20px;
+}
 
+.image-section.one {
+    justify-content: center;
+}
+
+.image-section.two {
     justify-content: space-between;
 }
 
@@ -420,20 +426,21 @@ h3 {
 }
 
 .image-container {
+    justify-self: center;
     background: #e1eef9;
     border-radius: 15px;
     padding: var(--space-md);
     margin-bottom: 30px;
     text-align: center;
     width: auto;
-    height: fit-content;
+    height: auto;
 }
 
 .image-caption {
     color: var(--blue-medium);
     font-style: italic;
     font-size: var(--text-sm);
-    margin-top: var(--space-xs);
+    margin-top: 20px;
 }
 
 /* Контентные блоки */
@@ -480,8 +487,10 @@ h3 {
 .features-grid,
 .rules-grid {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--space-md);
     margin: var(--space-lg) 0;
+    width: 100%;
 }
 
 .feature-card,
@@ -666,12 +675,13 @@ iframe {
     display: inline-block;
 }
 
+
 /* =========== ДОМАШНЕЕ ЗАДАНИЕ =========== */
 .homework-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 50%;
     background: #e6f0fa;
     border-radius: 20px;
     padding: 25px;
@@ -682,7 +692,7 @@ iframe {
 
 .homework-section h2 {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #003366;
     padding-bottom: 10px;
 }
@@ -690,8 +700,9 @@ iframe {
 .homework-level {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
-    padding: 18px;
+    width: 100%;
+    gap: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     background: white;
     border-radius: 15px;
@@ -749,13 +760,14 @@ iframe {
     border-left: 6px solid #9b6b9b;
 }
 
-.telegram-link {
+.block-link {
     display: block;
     background: #e8f0fe;
     border: 2px solid #4a90e2;
     border-radius: 15px;
     padding: 20px 25px;
     width: 60%;
+    justify-self: center;
     color: #003366;
     font-size: 1.2em;
     font-weight: 500;
@@ -766,7 +778,7 @@ iframe {
     box-shadow: 0 5px 15px rgba(0, 70, 140, 0.15);
 }
 
-.telegram-link:hover {
+.block-link:hover {
     background: #d4e6fa;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 70, 140, 0.25);
@@ -778,13 +790,13 @@ iframe {
     display: inline-block;
     min-width: 100px;
     height: 1.4em;
-    background: #c8d0d8;
+    background: rgb(225, 238, 249);
     border-radius: 8px;
     vertical-align: middle;
     margin: 0 4px;
     padding: 0 5px;
     border: none;
-    border-bottom: rgb(53, 53, 53) solid 2px;
+    border-bottom: #76aae6 solid 2px;
 }
 
 .blank-field::after {
@@ -919,10 +931,18 @@ iframe {
 .comparison-table table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
+    background: var(--blue-bg);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 60, 120, 0.08);
+}
+
+.comparison-table li {
+    margin-bottom: 16px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .comparison-table th {
@@ -933,6 +953,7 @@ iframe {
 }
 
 .comparison-table td {
+    vertical-align: top;
     padding: 12px;
     border-bottom: 1px solid #d0e2f2;
     text-align: center;
@@ -941,6 +962,11 @@ iframe {
 .comparison-table tr:last-child td {
     border-bottom: none;
 }
+
+.comparison-table td:first-child {
+    border-right: 2px solid #4a90e2;
+}
+
 
 /* Подсказки */
 .answer-hint {
@@ -998,6 +1024,7 @@ iframe {
 
 /* Блоки горных систем */
 .mountain-block {
+    height: auto;
     background: #ffffff;
     border-radius: 25px;
     padding: 30px;
@@ -1051,7 +1078,7 @@ iframe {
 
 .image-container .image-box {
     height: 100%;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     border-radius: 15px;
     border: 3px solid #4a90e2;
@@ -1066,6 +1093,17 @@ iframe {
 .feature-card>ul>li,
 .text-content>ul>li {
     text-align: start;
+}
+
+#five-tops,
+#video {
+    padding: 0 10dvw;
+}
+
+#five-tops iframe,
+#video iframe {
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1024px) {

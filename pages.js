@@ -1,7 +1,14 @@
 const pages = document.querySelectorAll(".page");
 
-let buttons, arrow, overlay
+let buttons, arrow, overlay, el_list
 let active = false
+
+function open_close(els) {
+    if (active) { el_list.forEach(el => { el.classList.remove("active") }) }
+    else { el_list.forEach(el => { el.classList.add("active") }) }
+    active = !active
+}
+
 if (window.matchMedia("(max-width: 768px)").matches) {
 
     overlay = document.querySelector(".overlay")
@@ -16,13 +23,9 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     arrow.addEventListener("click", open_close);
     overlay.addEventListener("click", open_close)
 
-    const el_list = [arrow, menu, overlay]
+    el_list = [arrow, menu, overlay]
 
-    function open_close() {
-        if (active) { el_list.forEach(el => { el.classList.remove("active") }) }
-        else { el_list.forEach(el => { el.classList.add("active") }) }
-        active = !active
-    }
+    open_close(el_list)
 }
 else { buttons = document.querySelectorAll(".button, .basic"); }
 
@@ -35,5 +38,6 @@ buttons.forEach(button => {
         const page_id = button.getAttribute("page-id");
         const page = document.querySelector(`.page[page-id="${page_id}"`)
         page.classList.add("active");
+        if (active) { open_close(el_list) }
     })
 });

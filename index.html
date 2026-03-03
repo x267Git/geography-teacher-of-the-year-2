@@ -114,6 +114,11 @@
                                 метров</p>
                         </div>
                         <div class="feature-card">
+                            <p>⏲️ <strong>Давление:</strong> При подъёме на каждые 10.5 метров (до 1 км) давление падает
+                                на 1 мм
+                                рт. ст.</p>
+                        </div>
+                        <div class="feature-card">
                             <p>💧 <strong>Влажность:</strong> На наветренных склонах выпадает больше осадков</p>
                         </div>
                         <div class="feature-card">
@@ -172,7 +177,7 @@
                         src="https://kinescope.io/embed/wjx1GYuo3vQ18SByFa3ysy"
                         allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;"
                         frameborder="0" allowfullscreen
-                        style="position: absolute; width: 100%; height: 57dvh; top: 0; left: 0; object-fit:contain;"></iframe>
+                        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; object-fit:contain;"></iframe>
                 </div>
             </div>
             <div class="page" page-id="3" id="height-map">
@@ -183,8 +188,8 @@
                 <div id="env-zone-map"><img src="images/env_zone_map.jpg" alt=""></div>
             </div>
             <div class="page" page-id="5" id="five-tops">
-                <iframe src='https://my.mail.ru/video/embed/8091807536300164556' width='626' height='367'
-                    frameborder='0' scrolling='no' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe src='https://my.mail.ru/video/embed/8091807536300164556' frameborder='0' scrolling='no'
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
             <div class="page" page-id="6" id="test">
                 <div class="quest-container">
@@ -502,7 +507,7 @@
                                 ее подножия (Б) температура составляет 12°С и известно, что температура воздуха
                                 понижается на 0,6°С на каждые 100 м высоты.</p>
 
-                            <div class="image-section">
+                            <div class="image-section one">
                                 <div class="image-container">
                                     <img src="images/p4.svg" alt="" style="width: 100%; object-fit: contain;">
                                 </div>
@@ -544,8 +549,8 @@
                                 <div class="image-box">
                                     <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/c0025507-7105-4a70-9a18-fdb71993408e/1024pxMountElbrusMay2008w400.jpg"
                                         alt="Гора Эльбрус">
+                                    <div class="image-caption">Гора Эльбрус</div>
                                 </div>
-                                <div class="image-caption">Гора Эльбрус</div>
                             </div>
                         </div>
 
@@ -565,25 +570,30 @@
                                     сухие
                                     степи и полупустыни.</p>
                             </div>
-                            <div class="side-image">
+                            <div class="image-container" style="width: 80%;">
                                 <div class="image-box">
                                     <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/7853e3b4-440c-4e90-892c-a33ecdd99e11/Svanetigeorgiaw400.jpg"
-                                        alt="Горные ландшафты Кавказа">
+                                        alt="Высотная поясность Кавказских гор" style="object-fit: cover;">
+                                    <div class="image-caption">Высотная поясность северного склона Кавказских
+                                        гор
+                                    </div>
                                 </div>
-                                <div class="image-caption">Горные ландшафты Кавказа</div>
                             </div>
                         </div>
 
-                        <div class="image-section">
-                            <div class="image-container">
+                        <div class="image-section one">
+                            <div class="image-container" style="width: 80%;">
                                 <div class="image-box">
-                                    <img src="images/kz1.jpeg" alt="Высотная поясность Кавказских гор">
-                                </div>
-                                <div class="image-caption">Высотная поясность северного склона Кавказских
-                                    гор
+                                    <img src="images/kz1.jpeg" alt="Высотная поясность Кавказских гор"
+                                        style="object-fit: contain;">
+                                    <div class="image-caption">Высотная поясность северного склона Кавказских
+                                        гор
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <a href="https://openkavkaz.com/3d/?che-sharoy-mount-guminkort-2490#,171.6,-43.8,140.0"
+                            class="block-link" target="_blank">Виртуальная экскурсия</a>
                     </div>
                 </div>
             </div>
@@ -605,8 +615,9 @@
                             <div class="side-image">
                                 <div class="image-box">
                                     <img src="images/kr3.jpg" alt="Схема высотной поясности крымских гор">
+                                    <div class="image-caption">Схема высотной поясности Крымских гор</div>
+
                                 </div>
-                                <div class="image-caption">Схема высотной поясности Крымских гор</div>
                             </div>
                         </div>
 
@@ -663,8 +674,7 @@
                                 различной крутизны и экспозиции.</p>
                         </div>
 
-                        <h3
-                            style="color: #003366; margin: 30px 0 15px; border-left: 5px solid #4a90e2; padding-left: 15px;">
+                        <h3 style="color: #003366; margin: 30px 0 15px;padding-left: 15px;">
                             🌡️ Климат</h3>
 
                         <div class="content-block">
@@ -690,78 +700,111 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="image-container"><img src="images/kr1.png" alt=""></div>
-                            <div class="image-caption">Климатические зоны Крыма</div>
-                        </div>
-                    </div>
-
-                    <h3
-                        style="color: #003366; margin: 30px 0 15px; border-left: 5px solid #4a90e2; padding-left: 15px;">
-                        🌿 Растительность</h3>
-
-                    <div class="features-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 30px;">
-                        <div class="feature-card">
-                            <h4 style="color: #1e4a7a; margin-bottom: 10px;">Предгорье</h4>
-                            <p>Лесостепной пояс: луговые степи, заросли кустарников (грабинник, держи-дерево,
-                                боярышник, терн) и низкорослые дубовые леса.</p>
-                        </div>
-
-                        <div class="feature-card">
-                            <h4 style="color: #1e4a7a; margin-bottom: 10px;">350–400 м</h4>
-                            <p>Лесной пояс: растительные сообщества дуба пушистого и дуба скального. В дубняках
-                                много кизила, бересклета, грабинника, бирючины.</p>
-                        </div>
-
-                        <div class="feature-card">
-                            <h4 style="color: #1e4a7a; margin-bottom: 10px;">700–800 м</h4>
-                            <p>Дубовые леса сменяются буковыми и грабовыми. Лесной пояс простирается до обрывов
-                                горных массивов, на самих вершинах лесов практически нет.</p>
-                        </div>
-                    </div>
-
-                    <h3
-                        style="color: #003366; margin: 30px 0 15px; border-left: 5px solid #4a90e2; padding-left: 15px;">
-                        🦊 Животный мир</h3>
-
-                    <div class="content-block" style="margin-bottom: 30px;">
-                        <div class="text-content">
-                            <p>Фауна Крымских гор носит черты островной фауны, что выражается в присутствии
-                                эндемиков и в неполноте многих групп животных.</p>
-
-                            <ul style="list-style-type: none; padding-left: 0;">
-                                <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
-                                    <strong>На Южном берегу</strong> — среди ящериц известен эндемичный крымский
-                                    геккон.
-                                </li>
-                                <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
-                                    <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
-                                    <strong>Богато представлена фауна беспозвоночных</strong> южного
-                                    средиземноморского типа: цикады, богомолы, сколопендра, крымский скорпион,
-                                    фаланга, москиты.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="side-image">
-                            <div class="image-box" style="display: flex; align-items: center; justify-content: center;">
-                                <img src="images/kr2.jpg" alt="">
+                            <div class="image-container"><img src="images/kr1.png" alt="">
+                                <div class="image-caption">Климатические зоны Крыма</div>
                             </div>
-                            <div class="image-caption">Крымский геккон (эндемик)</div>
                         </div>
+                        <h3 style="color: #003366; margin: 30px 0 15px;  padding-left: 15px;">
+                            🌿 Растительность</h3>
+
+                        <div class="features-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 30px;">
+                            <div class="feature-card">
+                                <h4 style="color: #1e4a7a; margin-bottom: 10px;">Предгорье</h4>
+                                <p>Лесостепной пояс: луговые степи, заросли кустарников (грабинник, держи-дерево,
+                                    боярышник, терн) и низкорослые дубовые леса.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <h4 style="color: #1e4a7a; margin-bottom: 10px;">350–400 м</h4>
+                                <p>Лесной пояс: растительные сообщества дуба пушистого и дуба скального. В дубняках
+                                    много кизила, бересклета, грабинника, бирючины.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <h4 style="color: #1e4a7a; margin-bottom: 10px;">700–800 м</h4>
+                                <p>Дубовые леса сменяются буковыми и грабовыми. Лесной пояс простирается до обрывов
+                                    горных массивов, на самих вершинах лесов практически нет.</p>
+                            </div>
+                        </div>
+
+                        <h3 style="color: #003366; margin: 30px 0 15px; padding-left: 15px;">
+                            🦊 Животный мир</h3>
+
+                        <div class="content-block" style="margin-bottom: 30px;">
+                            <div class="text-content">
+                                <p>Фауна Крымских гор носит черты островной фауны, что выражается в присутствии
+                                    эндемиков и в неполноте многих групп животных.</p>
+
+                                <ul style="list-style-type: none; padding-left: 0;">
+                                    <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>На Южном берегу</strong> — среди ящериц известен эндемичный крымский
+                                        геккон.
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                                        <span style="position: absolute; left: 0; color: #4a90e2;">•</span>
+                                        <strong>Богато представлена фауна беспозвоночных</strong> южного
+                                        средиземноморского типа: цикады, богомолы, сколопендра, крымский скорпион,
+                                        фаланга, москиты.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="side-image">
+                                <div class="image-box"
+                                    style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="images/kr2.jpg" alt="">
+                                </div>
+                                <div class="image-caption">Крымский геккон (эндемик)</div>
+                            </div>
+                        </div>
+
+                        <h3 style="color: #003366; margin: 30px 0 15px;  padding-left: 15px;">
+                            🏭 Хозяйственная деятельность</h3>
+
+                        <div class="warning-block" style="margin: 20px 0;">
+                            <p>В предгорье Крымских гор активная хозяйственная деятельность, в особенности устройство
+                                крупных карьеров по добыче строительного камня, ведёт к уничтожению растительности и
+                                нарушениям естественных ландшафтов.</p>
+                            <p>Ландшафты предгорных степей сильно преобразованы за счёт больших площадей пашни, здесь
+                                расположены многочисленные сельскохозяйственные угодья на месте
+                                разнотравно-типчаково-ковыльных степей и пушисто-дубовых лесов предгорья.</p>
+                        </div>
+
+                        <div class="comparison-table">
+                            <table>
+                                <tr>
+                                    <th>Географическое положение и рельеф</th>
+                                    <th>Природные ресурсы и жизнь людей</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                                            <li style="margin-bottom: 8px;">⦁ Находятся на юге Крымского полуострова,
+                                                омываются Чёрным морем.</li>
+                                            <li style="margin-bottom: 8px;">⦁ Широта: примерно 44° с.ш.</li>
+                                            <li style="margin-bottom: 8px;">⦁ Наибольшая вершина: г. Роман-Кош (1545 м).
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                                            <li style="margin-bottom: 8px;">⦁ Ресурсы: известняк, мрамор, источники
+                                                минеральной воды.</li>
+                                            <li style="margin-bottom: 8px;">⦁ Занятия людей: виноградарство, туризм,
+                                                здравницы.</li>
+                                            <li style="margin-bottom: 8px">⦁ Города: Ялта, Алушта, Бахчисарай.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a href="https://yandex.ru/maps/org/smotrovaya_ploshchadka_ay_petri/17999533229/?ll=34.064605%2C44.466754&z=14"
+                            class="block-link" target="_blank">Виртуальная экскурсия</a>
                     </div>
 
-                    <h3
-                        style="color: #003366; margin: 30px 0 15px; border-left: 5px solid #4a90e2; padding-left: 15px;">
-                        🏭 Хозяйственная деятельность</h3>
 
-                    <div class="warning-block" style="margin: 20px 0;">
-                        <p>В предгорье Крымских гор активная хозяйственная деятельность, в особенности устройство
-                            крупных карьеров по добыче строительного камня, ведёт к уничтожению растительности и
-                            нарушениям естественных ландшафтов.</p>
-                        <p>Ландшафты предгорных степей сильно преобразованы за счёт больших площадей пашни, здесь
-                            расположены многочисленные сельскохозяйственные угодья на месте
-                            разнотравно-типчаково-ковыльных степей и пушисто-дубовых лесов предгорья.</p>
-                    </div>
+
+
 
                 </div>
             </div>
@@ -787,8 +830,8 @@
                             <div class="image-box">
                                 <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/e1b59c9a-1c85-4cba-8049-15ca46c65822/LandscapeviewinCircumpolarUralsw400.jpg"
                                     alt="Ландшафт Северного Урала">
+                                <div class="image-caption">1. Ландшафт Северного Урала</div>
                             </div>
-                            <div class="image-caption">1. Ландшафт Северного Урала</div>
                         </div>
                     </div>
 
@@ -808,8 +851,8 @@
                             <div class="image-box">
                                 <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/27bcf9b8-d398-4c7e-9dc6-7e6d9d2c1407/ural1625764960720w400.jpg"
                                     alt="Река Чусовая">
+                                <div class="image-caption">Река Чусовая</div>
                             </div>
-                            <div class="image-caption">Река Чусовая</div>
                         </div>
                     </div>
 
@@ -823,16 +866,44 @@
                             каменистыми россыпями. На севере Уральских гор преобладает оледенение.</p>
                     </div>
 
-                    <div class="image-section">
+                    <div class="image-section one">
                         <div class="image-container">
                             <div class="image-box">
                                 <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/abf59f36-e2d0-4e06-8c40-71bda3f8a2f2/%D0%A3%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5%D0%B3%D0%BE%D1%80%D1%8Bw658.png"
-                                    alt="Высотная поясность Уральских гор">
+                                    alt="Высотная поясность Уральских гор"
+                                    style="object-fit: contain; justify-self: center;">
+                                <div class="image-caption">Высотная поясность Уральских гор</div>
                             </div>
-                            <div class="image-caption">Высотная поясность Уральских гор</div>
                         </div>
                     </div>
-
+                    <div class="comparison-table">
+                        <table>
+                            <tr>
+                                <th>Географическое положение и рельеф</th>
+                                <th>Природные ресурсы и жизнь людей</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                                        <li style="margin-bottom: 8px;">⦁ Разделяет Европу и Азию.</li>
+                                        <li style="margin-bottom: 8px;">⦁ Широта: 50-65° с.ш.</li>
+                                        <li style="margin-bottom: 8px;">⦁ Наибольшая вершина: г. Народная (1895 м).</li>
+                                        <li style="margin-bottom: 8px;">⦁ Рельеф: Средний, Южный и Северный Урал.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                                        <li style="margin-bottom: 8px;">⦁ Ресурсы: железо, медь, золото, нефть.</li>
+                                        <li style="margin-bottom: 8px;">⦁ Занятия людей: металлургия, добыча полезных
+                                            ископаемых.</li>
+                                        <li style="margin-bottom: 8px;">⦁ Города: Екатеринбург, Челябинск, Пермь.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="https://share.google/SsKzF2lZJezsz4cBN" class="block-link" target="_blank">Виртуальная
+                        экскурсия</a>
                 </div>
             </div>
         </div>
@@ -867,7 +938,7 @@
                     </div>
                 </div>
 
-                <a href="https://t.me/ShulaevaTatyana" target="_blank" class="telegram-link">
+                <a href="https://t.me/ShulaevaTatyana" target="_blank" class="block-link">
                     📬 Отправляй домашнее задание сюда: @ShulaevaTatyana
                 </a>
             </div>
