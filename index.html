@@ -173,11 +173,10 @@
                 </div>
             </div>
             <div class="page" page-id="2" id="video">
-                <div style="position: relative;width: 100%; height:100%"><iframe
+                <div style="position: relative;width: 100%; height:100%"><iframe class="video-player"
                         src="https://kinescope.io/embed/wjx1GYuo3vQ18SByFa3ysy"
                         allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;"
-                        frameborder="0" allowfullscreen
-                        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; object-fit:contain;"></iframe>
+                        frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="page" page-id="3" id="height-map">
@@ -188,8 +187,11 @@
                 <div id="env-zone-map"><img src="images/env_zone_map.jpg" alt=""></div>
             </div>
             <div class="page" page-id="5" id="five-tops">
-                <iframe src='https://my.mail.ru/video/embed/8091807536300164556' frameborder='0' scrolling='no'
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <div id="main-container" style="height: auto; aspect-ratio: 16/9; width: 100%;">
+                    <iframe src='https://my.mail.ru/video/embed/8091807536300164556' frameborder='0' scrolling='no'
+                        webkitallowfullscreen mozallowfullscreen allowfullscreen class="video-player"
+                        style="border-radius: 20px;"></iframe>
+                </div>
             </div>
             <div class="page" page-id="6" id="test">
                 <div class="quest-container">
@@ -798,6 +800,15 @@
                                 </tr>
                             </table>
                         </div>
+                        <div class="image-section one">
+                            <div class="image-container">
+                                <div class="image-box">
+                                    <img src="images/krim_info.png" alt="Высотная поясность Крымских гор"
+                                        style="object-fit: contain; justify-self: center;">
+                                </div>
+                                <div class="image-caption">Высотная поясность Уральских гор</div>
+                            </div>
+                        </div>
                         <a href="https://yandex.ru/maps/org/smotrovaya_ploshchadka_ay_petri/17999533229/?ll=34.064605%2C44.466754&z=14"
                             class="block-link" target="_blank">Виртуальная экскурсия</a>
                     </div>
@@ -808,139 +819,152 @@
 
                 </div>
             </div>
-        </div>
-        <div class="page" page-id="10" id="ural">
-            <div class="v-cont">
-                <div class="mountain-block">
-                    <h2 class="mountain-title">⛰️ Уральские горы</h2>
+            <div class="page" page-id="10" id="ural">
+                <div class="v-cont">
+                    <div class="mountain-block">
+                        <h2 class="mountain-title">⛰️ Уральские горы</h2>
 
-                    <div class="content-block">
-                        <div class="text-content">
-                            <p><strong>Уральский горный хребет</strong> считается условной линией, по которой
-                                проходит
-                                граница между Европейской и Азиатской частью нашей страны. Это невысокие горы (самая
-                                высокая вершина — г. Народная, 1895 м). Протяжённость гор по меридиану — более 2000
-                                км,
-                                ширина варьируется от 40 км до 150 км.</p>
-                            <p>Уральские горы лежат практически во всех природных зонах Российской Федерации,
-                                поэтому их
-                                ландшафты в разных широтах различаются.</p>
-                        </div>
-                        <div class="side-image">
-                            <div class="image-box">
-                                <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/e1b59c9a-1c85-4cba-8049-15ca46c65822/LandscapeviewinCircumpolarUralsw400.jpg"
-                                    alt="Ландшафт Северного Урала">
-                                <div class="image-caption">1. Ландшафт Северного Урала</div>
+                        <div class="content-block">
+                            <div class="text-content">
+                                <p><strong>Уральский горный хребет</strong> считается условной линией, по которой
+                                    проходит
+                                    граница между Европейской и Азиатской частью нашей страны. Это невысокие горы (самая
+                                    высокая вершина — г. Народная, 1895 м). Протяжённость гор по меридиану — более 2000
+                                    км,
+                                    ширина варьируется от 40 км до 150 км.</p>
+                                <p>Уральские горы лежат практически во всех природных зонах Российской Федерации,
+                                    поэтому их
+                                    ландшафты в разных широтах различаются.</p>
+                            </div>
+                            <div class="side-image">
+                                <div class="image-box">
+                                    <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/e1b59c9a-1c85-4cba-8049-15ca46c65822/LandscapeviewinCircumpolarUralsw400.jpg"
+                                        alt="Ландшафт Северного Урала">
+                                    <div class="image-caption">1. Ландшафт Северного Урала</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="content-block reverse">
-                        <div class="text-content">
-                            <p>Несмотря на большую высоту в северной части, высотная поясность Урала здесь не
-                                обладает
-                                большим разнообразием. У подножия растут мхи и кустарнички, выше встречаются
-                                лишайники,
-                                далее склоны лишены растительности, у самых вершин лежат небольшие ледники. Этот
-                                пояс
-                                Урала носит название <strong>«гольцовый»</strong> (голый, без растительности).</p>
-                            <p>Южнее, в пределах Среднего Урала, склоны покрыты темнохвойными, в основном еловыми,
-                                лесами. Выше расположена тундра. Здесь горы невысокие.</p>
-                        </div>
-                        <div class="side-image">
-                            <div class="image-box">
-                                <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/27bcf9b8-d398-4c7e-9dc6-7e6d9d2c1407/ural1625764960720w400.jpg"
-                                    alt="Река Чусовая">
-                                <div class="image-caption">Река Чусовая</div>
+                        <div class="content-block reverse">
+                            <div class="text-content">
+                                <p>Несмотря на большую высоту в северной части, высотная поясность Урала здесь не
+                                    обладает
+                                    большим разнообразием. У подножия растут мхи и кустарнички, выше встречаются
+                                    лишайники,
+                                    далее склоны лишены растительности, у самых вершин лежат небольшие ледники. Этот
+                                    пояс
+                                    Урала носит название <strong>«гольцовый»</strong> (голый, без растительности).</p>
+                                <p>Южнее, в пределах Среднего Урала, склоны покрыты темнохвойными, в основном еловыми,
+                                    лесами. Выше расположена тундра. Здесь горы невысокие.</p>
+                            </div>
+                            <div class="side-image">
+                                <div class="image-box">
+                                    <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/27bcf9b8-d398-4c7e-9dc6-7e6d9d2c1407/ural1625764960720w400.jpg"
+                                        alt="Река Чусовая">
+                                    <div class="image-caption">Река Чусовая</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="feature-card full-width">
-                        <p><strong>Наибольшим разнообразием обладает Южный Урал.</strong> Лесостепи (березняки и
-                            степные
-                            луга) сменяются смешанными лесами, затем хвойными лесами, ещё выше расположены горная
-                            тундра
-                            и скалистые ландшафты.</p>
-                        <p>Большая часть склонов Уральских гор покрыта лесами, вершины заняты горной тундрой и
-                            каменистыми россыпями. На севере Уральских гор преобладает оледенение.</p>
-                    </div>
+                        <div class="feature-card full-width">
+                            <p><strong>Наибольшим разнообразием обладает Южный Урал.</strong> Лесостепи (березняки и
+                                степные
+                                луга) сменяются смешанными лесами, затем хвойными лесами, ещё выше расположены горная
+                                тундра
+                                и скалистые ландшафты.</p>
+                            <p>Большая часть склонов Уральских гор покрыта лесами, вершины заняты горной тундрой и
+                                каменистыми россыпями. На севере Уральских гор преобладает оледенение.</p>
+                        </div>
 
-                    <div class="image-section one">
-                        <div class="image-container">
-                            <div class="image-box">
-                                <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/abf59f36-e2d0-4e06-8c40-71bda3f8a2f2/%D0%A3%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5%D0%B3%D0%BE%D1%80%D1%8Bw658.png"
-                                    alt="Высотная поясность Уральских гор"
-                                    style="object-fit: contain; justify-self: center;">
+                        <div class="image-section one">
+                            <div class="image-container">
+                                <div class="image-box">
+                                    <img src="//8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/abf59f36-e2d0-4e06-8c40-71bda3f8a2f2/%D0%A3%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B5%D0%B3%D0%BE%D1%80%D1%8Bw658.png"
+                                        alt="Высотная поясность Уральских гор"
+                                        style="object-fit: contain; justify-self: center;">
+                                </div>
                                 <div class="image-caption">Высотная поясность Уральских гор</div>
                             </div>
                         </div>
+                        <div class="comparison-table">
+                            <table>
+                                <tr>
+                                    <th>Географическое положение и рельеф</th>
+                                    <th>Природные ресурсы и жизнь людей</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                                            <li style="margin-bottom: 8px;">⦁ Разделяет Европу и Азию.</li>
+                                            <li style="margin-bottom: 8px;">⦁ Широта: 50-65° с.ш.</li>
+                                            <li style="margin-bottom: 8px;">⦁ Наибольшая вершина: г. Народная (1895 м).
+                                            </li>
+                                            <li style="margin-bottom: 8px;">⦁ Рельеф: Средний, Южный и Северный Урал.
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                                            <li style="margin-bottom: 8px;">⦁ Ресурсы: железо, медь, золото, нефть.</li>
+                                            <li style="margin-bottom: 8px;">⦁ Занятия людей: металлургия, добыча
+                                                полезных
+                                                ископаемых.</li>
+                                            <li style="margin-bottom: 8px;">⦁ Города: Екатеринбург, Челябинск, Пермь.
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="image-section one">
+                            <div class="image-container">
+                                <div class="image-box">
+                                    <img src="images/ural_info.png" alt="Высотная поясность Уральских гор"
+                                        style="object-fit: contain; justify-self: center;">
+                                </div>
+                                <div class="image-caption">Высотная поясность Уральских гор</div>
+                            </div>
+                        </div>
+                        <a href="https://share.google/SsKzF2lZJezsz4cBN" class="block-link" target="_blank">Виртуальная
+                            экскурсия</a>
                     </div>
-                    <div class="comparison-table">
-                        <table>
-                            <tr>
-                                <th>Географическое положение и рельеф</th>
-                                <th>Природные ресурсы и жизнь людей</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
-                                        <li style="margin-bottom: 8px;">⦁ Разделяет Европу и Азию.</li>
-                                        <li style="margin-bottom: 8px;">⦁ Широта: 50-65° с.ш.</li>
-                                        <li style="margin-bottom: 8px;">⦁ Наибольшая вершина: г. Народная (1895 м).</li>
-                                        <li style="margin-bottom: 8px;">⦁ Рельеф: Средний, Южный и Северный Урал.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
-                                        <li style="margin-bottom: 8px;">⦁ Ресурсы: железо, медь, золото, нефть.</li>
-                                        <li style="margin-bottom: 8px;">⦁ Занятия людей: металлургия, добыча полезных
-                                            ископаемых.</li>
-                                        <li style="margin-bottom: 8px;">⦁ Города: Екатеринбург, Челябинск, Пермь.</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <a href="https://share.google/SsKzF2lZJezsz4cBN" class="block-link" target="_blank">Виртуальная
-                        экскурсия</a>
                 </div>
             </div>
-        </div>
 
-        <div class="page" page-id="12" id="homework">
-            <div class="homework-section">
-                <h2>📚 Домашнее задание</h2>
+            <div class="page" page-id="12" id="homework">
+                <div class="homework-section">
+                    <h2>📚 Домашнее задание</h2>
 
-                <div class="homework-level basic" page-id="11">
-                    <div class="level-icon">🔵</div>
-                    <div class="level-content">
-                        <div class="level-title">Базовый уровень</div>
-                        <p>Выполнить практическую работу на сайте.</p>
+                    <div class="homework-level basic" page-id="11">
+                        <div class="level-icon">🔵</div>
+                        <div class="level-content">
+                            <div class="level-title">Базовый уровень</div>
+                            <p>Выполнить практическую работу на сайте.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="homework-level advanced">
-                    <div class="level-icon">🔴</div>
-                    <div class="level-content">
-                        <div class="level-title">Повышенный уровень</div>
-                        <p>Выявить факторы, определяющие количество высотных поясов: удаленность от моря и
-                            экспозицию склона.</p>
+                    <div class="homework-level advanced">
+                        <div class="level-icon">🔴</div>
+                        <div class="level-content">
+                            <div class="level-title">Повышенный уровень</div>
+                            <p>Выявить факторы, определяющие количество высотных поясов: удаленность от моря и
+                                экспозицию склона.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="homework-level creative">
-                    <div class="level-icon">💡</div>
-                    <div class="level-content">
-                        <div class="level-title">Творческое задание</div>
-                        <p>Представьте, что вы турагент и разработайте туристический маршрут по одной из горных
-                            вершин Европейской части России.</p>
+                    <div class="homework-level creative">
+                        <div class="level-icon">💡</div>
+                        <div class="level-content">
+                            <div class="level-title">Творческое задание</div>
+                            <p>Представьте, что вы турагент и разработайте туристический маршрут по одной из горных
+                                вершин Европейской части России.</p>
+                        </div>
                     </div>
-                </div>
 
-                <a href="https://t.me/ShulaevaTatyana" target="_blank" class="block-link">
-                    📬 Отправляй домашнее задание сюда: @ShulaevaTatyana
-                </a>
+                    <a href="https://t.me/ShulaevaTatyana" target="_blank" class="block-link">
+                        📬 Отправляй домашнее задание сюда: @ShulaevaTatyana
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -968,18 +992,20 @@
         <div class="line"></div>
     </div>
     <div class="side-menu">
-        <div class="side-button pressed" page-id="1"><span>Теория</span></div>
-        <div class="side-button" page-id="2"><span>Видео</span></div>
-        <div class="side-button" page-id="3"><span>Рельеф</span></div>
-        <div class="side-button" page-id="4"><span>Природные Зоны</span></div>
-        <div class="side-button" page-id="5"><span>5 Вершин</span></div>
-        <div class="side-button" page-id="6"><span>Тест</span></div>
-        <div class="side-button" page-id="7"><span>Teхника безопасности</span></div>
-        <div class="side-button" page-id="8"><span>Кавказ</span></div>
-        <div class="side-button" page-id="9"><span>Крым</span></div>
-        <div class="side-button" page-id="10"><span>Урал</span></div>
-        <div class="side-button" page-id="11"><span>Практика</span></div>
-        <div class="side-button" page-id="12"><span>Домашнее задание</span></div>
+        <div class="menu-scroll-container">
+            <div class="side-button pressed" page-id="1"><span>Теория</span></div>
+            <div class="side-button" page-id="2"><span>Видео</span></div>
+            <div class="side-button" page-id="3"><span>Рельеф</span></div>
+            <div class="side-button" page-id="4"><span>Природные Зоны</span></div>
+            <div class="side-button" page-id="5"><span>5 Вершин</span></div>
+            <div class="side-button" page-id="6"><span>Тест</span></div>
+            <div class="side-button" page-id="7"><span>Teхника безопасности</span></div>
+            <div class="side-button" page-id="8"><span>Кавказ</span></div>
+            <div class="side-button" page-id="9"><span>Крым</span></div>
+            <div class="side-button" page-id="10"><span>Урал</span></div>
+            <div class="side-button" page-id="11"><span>Практика</span></div>
+            <div class="side-button" page-id="12"><span>Домашнее задание</span></div>
+        </div>
     </div>
     <div class="overlay"></div>
 

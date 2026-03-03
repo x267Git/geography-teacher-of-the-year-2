@@ -266,7 +266,7 @@ footer {
 #relief-map,
 #env-zone-map {
     overflow: hidden;
-    width: 70%;
+    width: 100%;
     height: 100%;
 }
 
@@ -283,8 +283,8 @@ footer {
     background: #e6f0fa;
     border: 2px solid var(--blue-primary);
     border-radius: 2dvh;
-    width: 80%;
     height: 90%;
+    padding: 10px;
 }
 
 .counter {
@@ -294,21 +294,22 @@ footer {
 }
 
 .question-text {
-    padding: 3dvh 5dvw;
     font-size: var(--text-lg);
 }
 
 .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     align-self: center;
     align-content: center;
     text-align: center;
     font-size: var(--text-xl);
     margin: 1dvh;
-    width: 80%;
+    width: 90%;
     border: 0.2dvh solid #a3a3a3;
     background-color: #fffcf6;
     border-radius: 2dvh;
-    height: 5dvh;
 }
 
 .option.true {
@@ -319,20 +320,25 @@ footer {
     background-color: #e69595;
 }
 
-.option>span,
+.option>span {
+    font-size: var(--text-md);
+}
+
 .next>span {
     font-size: var(--text-lg);
 }
 
 .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     align-self: center;
-    margin: 1dvh;
-    width: 40%;
+    width: 50%;
     border: 0.3dvh solid rgba(48, 138, 212, 0.5);
     background-color: rgba(130, 188, 236, 0.3);
     color: rgba(81, 81, 92, 0.3);
-    border-radius: 2dvh;
-    height: 5dvh;
+    border-radius: 15px;
+    margin-top: 15px;
     align-content: center;
     text-align: center;
     font-size: var(--text-2xl);
@@ -415,6 +421,10 @@ h3 {
 
 .image-section.one {
     justify-content: center;
+}
+
+.image-section.one>.image-container {
+    width: auto;
 }
 
 .image-section.two {
@@ -535,9 +545,9 @@ h3 {
     position: absolute;
     top: -15px;
     left: 20px;
-    font-size: 2em;
-    background: white;
-    padding: 0 var(--space-xs);
+    font-size: 1.5em;
+    background: rgb(248, 248, 248);
+    padding: 8px;
     border-radius: 20px;
 }
 
@@ -546,9 +556,9 @@ h3 {
     position: absolute;
     top: -15px;
     left: 20px;
-    font-size: 2em;
-    background: white;
-    padding: 0 var(--space-xs);
+    font-size: 1.5em;
+    background: rgb(248, 248, 248);
+    padding: 8px;
     border-radius: 20px;
 }
 
@@ -625,21 +635,20 @@ h3 {
     padding: 2px 5px;
     border-radius: 4px;
     color: var(--blue-dark);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 hr {
     border: none;
     height: 2px;
-    background: linear-gradient(to right, transparent, var(--blue-primary), transparent);
+    background: var(--blue-primary);
     margin: var(--space-lg) 0;
 }
 
 /* ========== ВИДЕО ========== */
 iframe {
-    padding: 1dvh;
-    width: 80%;
-    border-radius: 4dvh;
+    padding: 10px;
+    border-radius: 20px;
     border: none;
 }
 
@@ -1097,13 +1106,17 @@ iframe {
 
 #five-tops,
 #video {
-    padding: 0 10dvw;
+    padding: 0 0;
 }
 
-#five-tops iframe,
-#video iframe {
+
+.video-player {
+    position: relative;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
 }
 
 @media (max-width: 1024px) {
@@ -1132,9 +1145,8 @@ iframe {
     }
 
     iframe {
-        height: 56dvh;
         border-radius: 0;
-        width: 100%;
+        width: 100%
     }
 
     .v-cont {
@@ -1192,6 +1204,16 @@ iframe {
         transition: 0.3s;
     }
 
+    .video-player {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9;
+        height: auto;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+    }
+
     .line {
         width: 80%;
         background-color: #3d3774;
@@ -1214,9 +1236,15 @@ iframe {
         box-shadow: 5px 5px 5px rgba(98, 98, 99, 0.5);
         border-top: none;
         border-left: none;
-        padding-bottom: 20px;
+        padding: 10px;
         border-bottom-right-radius: 15px;
         transition: 0.3s;
+    }
+
+    .menu-scroll-container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
     }
 
     .side-menu.active {
@@ -1232,9 +1260,8 @@ iframe {
         background-color: rgb(206, 221, 255);
         width: 90%;
         margin-top: 15px;
-        margin-right: 15px;
-        height: 8dvh;
-        padding: 1dvh 0;
+        padding: 0;
+        flex: 1 1;
         border-left: 8px solid rgb(91, 109, 209);
         border-radius: 15px;
         transition: 0.3s;
@@ -1252,7 +1279,7 @@ iframe {
 
 
     .side-button>span {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .side-button.pressed {
@@ -1264,18 +1291,19 @@ iframe {
     }
 
     header {
-        margin-top: 15px;
         height: auto;
         background-image: none;
+        overflow: hidden;
     }
 
     header>span {
         display: none;
+        padding: 0;
     }
 
     header>h1 {
-
         font-size: var(--text-2xl);
+        margin: 0;
     }
 
     .buttons {
@@ -1299,6 +1327,19 @@ iframe {
     .overlay.active {
         display: block;
     }
+
+    #video {
+        padding: 0;
+    }
+
+    .homework-section {
+        width: 100%;
+    }
+
+    header>h1 {
+        padding: 10px;
+    }
+
 }
 
 @media (min-width: 1025px) {
@@ -1311,7 +1352,6 @@ iframe {
 
     header>h1 {
         display: none;
-
     }
 
     .image-container {
@@ -1321,5 +1361,11 @@ iframe {
 
     #height-map {
         padding: 0;
+    }
+
+    #five-tops iframe,
+    #video iframe {
+        width: 100%;
+        height: 100%;
     }
 }
