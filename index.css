@@ -36,7 +36,6 @@
 
     /* Размеры контейнеров */
     --header-height: 20dvh;
-    --footer-height: 8dvh;
 }
 
 /* ========== БАЗОВЫЕ СТИЛИ ========== */
@@ -124,7 +123,7 @@ header>span {
 }
 
 footer {
-    height: var(--footer-height);
+    padding: 10px;
     border-top: 10px solid #313138;
     background: #393941;
     flex-shrink: 0;
